@@ -35,6 +35,7 @@ export class RegisterPage {
   }
 
   async enviarSemPreencher() {
+    await this.aceiteTermos.check();
     await this.botaoCadastrar.click();
   }
 
